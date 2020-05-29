@@ -275,7 +275,7 @@ It is meant for text type inputs only, such as `"text"`, `"password"`, `"email"`
 
 - type
 
-##### Description : The type of control to display. The default type is text.
+##### Description : The type of control to display. The default type is text. `Type : "date" | "email" | "number" | "password" | "search" | "tel" | "text" | "time" | "url"`
 
 ### Usage
 
