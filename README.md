@@ -155,3 +155,29 @@ Content, along with many other Ionic components, can be customized to modify its
   </ion-content>
 </ion-app>
 ```
+
+## ion-item
+
+### Description
+
+Items are elements that can contain text, icons, avatars, images, inputs, and any other native or custom elements. Generally they are placed in a list with other items. Items can be swiped, deleted, reordered, edited, and more.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-item>
+      <!-- text, icons, avatars, images, inputs, and any other native or custom elements. -->
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
