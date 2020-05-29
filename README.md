@@ -36,3 +36,21 @@ add the following inside the <head> element in an HTML file, or where external a
 |2 | Click On 'Developers' dropdown tab then 'UI Components'. |
 |3 | Click On 'Guide' in toolbar of that page. |
 |4 | Click On 'Packages & CDN' in the left-side toolbar of that page. |
+
+---
+
+# Working With UI Components
+
+## ion-app
+
+### Description
+
+App is a container element for an Ionic application. There should only be one `<ion-app>` element per project. An app can have many Ionic components including menus, headers, content, and footers. The overlay components get appended to the `<ion-app>` when they are presented.
+
+### Usage
+
+```html
+<ion-app>
+  <!-- menus, headers, content, and footers -->
+</ion-app>
+```
