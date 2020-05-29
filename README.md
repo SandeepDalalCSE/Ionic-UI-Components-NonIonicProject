@@ -265,8 +265,39 @@ It is meant for text type inputs only, such as `"text"`, `"password"`, `"email"`
       <ion-label>
         <!-- LABEL_FOR_INPUT-FIELD -->
       </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
+
+# Properties | ion-input
+
+- type
+
+##### Description : The type of control to display. The default type is text.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
       <ion-input type="text"></ion-input>
     </ion-item>
   </ion-content>
 </ion-app>
 ```
+
+---
