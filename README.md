@@ -128,3 +128,30 @@ Toolbars are positioned above or below content. When a toolbar is placed in an `
   </ion-header>
 </ion-app>
 ```
+
+## ion-content
+
+### Description
+
+The content component provides an easy to use content area with some useful methods to control the scrollable area. There should only be one content in a single view.
+
+Content, along with many other Ionic components, can be customized to modify its padding, margin, and more using the global styles provided in the [CSS Utilities](https://ionicframework.com/docs/layout/css-utilities) or by individually styling it using CSS and the available [CSS Custom Properties](https://ionicframework.com/docs/api/content/#css-custom-properties).
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <!-- content area with some useful methods -->
+    <!-- Content, along with many other Ionic components -->
+  </ion-content>
+</ion-app>
+```
