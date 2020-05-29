@@ -210,6 +210,36 @@ Label is a wrapper element that can be used in combination with ion-item, ion-in
 </ion-app>
 ```
 
+# Properties | ion-label
+
+- position
+
+##### Description : The position determines where and how the label behaves inside an item. `Type : "fixed" | "floating" | "stacked" | undefined`
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-item>
+      <ion-label position="floating">
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
+
+---
+
 ## ion-input
 
 ### Description
