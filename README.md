@@ -181,3 +181,31 @@ Items are elements that can contain text, icons, avatars, images, inputs, and an
   </ion-content>
 </ion-app>
 ```
+
+## ion-label
+
+### Description
+
+Label is a wrapper element that can be used in combination with ion-item, ion-input, ion-toggle, and more. The position of the label inside of an item can be inline, fixed, stacked, or floating.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
