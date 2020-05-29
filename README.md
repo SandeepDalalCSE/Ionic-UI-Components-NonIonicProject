@@ -301,3 +301,36 @@ It is meant for text type inputs only, such as `"text"`, `"password"`, `"email"`
 ```
 
 ---
+
+## ion-card
+
+### Description
+
+Cards are a standard piece of UI that serves as an entry point to more detailed information. A card can be a single component, but is often made up of some header, title, subtitle, and content. ion-card is broken up into several sub-components as `ion-card-content`, `ion-card-header`, `ion-card-title`, `ion-card-subtitle`.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <!-- header, title, subtitle, and content -->
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
