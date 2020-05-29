@@ -54,3 +54,19 @@ App is a container element for an Ionic application. There should only be one `<
   <!-- menus, headers, content, and footers -->
 </ion-app>
 ```
+
+## ion-header
+
+### Description
+
+Header is a parent component that holds the toolbar component. It's important to note that ion-header needs to be the one of the three root elements of a page
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <!-- toolbar -->
+  </ion-header>
+</ion-app>
+```
