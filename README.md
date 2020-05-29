@@ -88,3 +88,23 @@ Toolbars are positioned above or below content. When a toolbar is placed in an `
   </ion-header>
 </ion-app>
 ```
+
+## ion-title
+
+### Description
+
+`<ion-title>` is a component that sets the title of the Toolbar.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-app>
+```
