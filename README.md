@@ -70,3 +70,21 @@ Header is a parent component that holds the toolbar component. It's important to
   </ion-header>
 </ion-app>
 ```
+
+## ion-toolbar
+
+### Description
+
+Toolbars are positioned above or below content. When a toolbar is placed in an `<ion-header>` it will appear fixed at the top of the content, and when it is in an `<ion-footer>` it will appear fixed at the bottom. Fullscreen content will scroll behind a toolbar in a header or footer. When placed within an `<ion-content>`, toolbars will scroll with the content.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <!-- title, buttons, back-button -->
+    </ion-toolbar>
+  </ion-header>
+</ion-app>
+```
