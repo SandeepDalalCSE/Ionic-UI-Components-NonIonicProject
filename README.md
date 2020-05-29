@@ -89,6 +89,26 @@ Toolbars are positioned above or below content. When a toolbar is placed in an `
 </ion-app>
 ```
 
+# Properties | ion-toolbar
+
+- color
+
+##### Description : The color to use from your application's color palette. Default options are: "primary", "secondary", "tertiary", "success", "warning", "danger", "light", "medium", and "dark".
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <!-- title, buttons, back-button -->
+    </ion-toolbar>
+  </ion-header>
+</ion-app>
+```
+
+---
+
 ## ion-title
 
 ### Description
