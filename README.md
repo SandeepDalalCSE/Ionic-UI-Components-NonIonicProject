@@ -1300,25 +1300,25 @@ The float CSS property specifies that an element should be placed along the left
 ```
 
 **_Responsive Float Classes | Reference : Element Placement_**
-All of the float classes listed above have additional classes to modify the float based on the screen size. Instead of `float- `in each class, use `float-{breakpoint}- `to only use the class on specific screen sizes, where `{breakpoint}` is one of the breakpoint names listed in Ionic Breakpoints.
+All of the float classes listed above have additional classes to modify the float based on the screen size. Instead of `float-`in each class, use `float-{breakpoint}-`to only use the class on specific screen sizes, where `{breakpoint}` is one of the breakpoint names listed in Ionic Breakpoints.
 
 The table below shows the default behavior, where `{modifier}` is any of the following: `left`, `right`, `start`, or `end`, as they are described above.
 
-|Class	|Description |
-|----|----|
-|.ion-float-{modifier}	|Applies the modifier to the element on all screen sizes. |
-|.ion-float-sm-{modifier}	|Applies the modifier to the element when min-width: 576px. |
-|.ion-float-md-{modifier}	|Applies the modifier to the element when min-width: 768px. |
-|.ion-float-lg-{modifier}	|Applies the modifier to the element when min-width: 992px. |
-|.ion-float-xl-{modifier}	|Applies the modifier to the element when min-width: 1200px. |
+| Class                    | Description                                                 |
+| ------------------------ | ----------------------------------------------------------- |
+| .ion-float-{modifier}    | Applies the modifier to the element on all screen sizes.    |
+| .ion-float-sm-{modifier} | Applies the modifier to the element when min-width: 576px.  |
+| .ion-float-md-{modifier} | Applies the modifier to the element when min-width: 768px.  |
+| .ion-float-lg-{modifier} | Applies the modifier to the element when min-width: 992px.  |
+| .ion-float-xl-{modifier} | Applies the modifier to the element when min-width: 1200px. |
 
 - ## _Element Display_
 
 The display CSS property determines if an element should be visible or not. The element will still be in the DOM, but not rendered, if it is hidden.
 
-| Class	| Style Rule	| Description |
-|----|----|----|
-|.ion-hide	|display: none	|The element will be hidden. |
+| Class     | Style Rule    | Description                 |
+| --------- | ------------- | --------------------------- |
+| .ion-hide | display: none | The element will be hidden. |
 
 ### Usage
 
@@ -1345,9 +1345,81 @@ The display CSS property determines if an element should be visible or not. The 
 
 There are also additional classes to modify the visibility based on the screen size. Instead of just `.ion-hide` for all screen sizes, use `.ion-hide-{breakpoint}-{dir}` to only use the class on specific screen sizes, where `{breakpoint}` is one of the breakpoint names listed in Ionic Breakpoints, and `{dir}` is whether the element should be hidden on all screen sizes above (up) or below (down) the specified breakpoint.
 
-|Class	|Description |
-|----|----|
-|.ion-hide-sm-{dir}	|Applies the modifier to the element when min-width: 576px (up) or max-width: 576px (down).|
-|.ion-hide-md-{dir}	|Applies the modifier to the element when min-width: 768px (up) or max-width: 768px (down). |
-|.ion-hide-lg-{dir}	|Applies the modifier to the element when min-width: 992px (up) or max-width: 992px (down). |
-|.ion-hide-xl-{dir}	|Applies the modifier to the element when min-width: 1200px (up) or max-width: 1200px (down). |
+| Class              | Description                                                                                  |
+| ------------------ | -------------------------------------------------------------------------------------------- |
+| .ion-hide-sm-{dir} | Applies the modifier to the element when min-width: 576px (up) or max-width: 576px (down).   |
+| .ion-hide-md-{dir} | Applies the modifier to the element when min-width: 768px (up) or max-width: 768px (down).   |
+| .ion-hide-lg-{dir} | Applies the modifier to the element when min-width: 992px (up) or max-width: 992px (down).   |
+| .ion-hide-xl-{dir} | Applies the modifier to the element when min-width: 1200px (up) or max-width: 1200px (down). |
+
+- ## _Content Space_
+
+1. ### **Element Padding**
+
+### Description
+
+The padding class sets the padding area of an element. The padding area is the space between the content of the element and its border.
+
+The default amount of padding to be applied is 16px and is set by the `--ion-padding` variable. See the CSS Variables section for more information on how to change these values.
+
+| Class                   | Style Rule           | Description                            |
+| ----------------------- | -------------------- | -------------------------------------- |
+| .ion-padding            | padding: 16px        | Applies padding to all sides.          |
+| .ion-padding-top        | padding-top: 16px    | Applies padding to the top.            |
+| .ion-padding-start      | padding-start: 16px  | Applies padding to the start.          |
+| .ion-padding-end        | padding-end: 16px    | Applies padding to the end.            |
+| .ion-padding-bottom     | padding-bottom: 16px | Applies padding to the bottom.         |
+| .ion-padding-vertical   | padding: 16px 0      | Applies padding to the top and bottom. |
+| .ion-padding-horizontal | padding: 0 16px      | Applies padding to the left and right. |
+| .ion-no-padding         | padding: 0           | Applies no padding to all sides.       |
+
+### Usage
+
+```html
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-padding">
+      <div>
+        padding
+      </div>
+    </ion-col>
+    <ion-col class="ion-padding-top">
+      <div>
+        padding-top
+      </div>
+    </ion-col>
+    <ion-col class="ion-padding-start">
+      <div>
+        padding-start
+      </div>
+    </ion-col>
+    <ion-col class="ion-padding-end">
+      <div>
+        padding-end
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-padding-bottom">
+      <div>
+        padding-bottom
+      </div>
+    </ion-col>
+    <ion-col class="ion-padding-vertical">
+      <div>
+        padding-vertical
+      </div>
+    </ion-col>
+    <ion-col class="ion-padding-horizontal">
+      <div>
+        padding-horizontal
+      </div>
+    </ion-col>
+    <ion-col class="ion-no-padding">
+      <div>
+        no-padding
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
