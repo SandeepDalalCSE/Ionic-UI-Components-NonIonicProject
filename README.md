@@ -1798,3 +1798,34 @@ The border display CSS property determines if the border should be visible or no
   </ion-toolbar>
 </ion-footer>
 ```
+
+- ## _Ionic Breakpoints_
+
+Ionic uses breakpoints in media queries in order to style an application differently based on the screen size. The following breakpoint names are used in the utility classes listed above, where the class will apply when the width is met.
+
+|Breakpoint Name	|Width |
+|----|----|
+|xs	|0 |
+|sm	|576px |
+|md	|768px |
+|lg	|992px |
+|xl	|1200px |
+
+
+### Usage
+
+```html
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Header - No Border</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Footer - No Border</ion-title>
+  </ion-toolbar>
+</ion-footer>
+```
+
