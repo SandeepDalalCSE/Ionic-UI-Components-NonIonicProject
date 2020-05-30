@@ -1262,3 +1262,37 @@ The table below shows the default behavior, where `{modifier}` is any of the fol
 | .ion-text-md-{modifier} | Applies the modifier to the element when min-width: 768px.  |
 | .ion-text-lg-{modifier} | Applies the modifier to the element when min-width: 992px.  |
 | .ion-text-xl-{modifier} | Applies the modifier to the element when min-width: 1200px. |
+
+- ## _Element Placement_
+
+1. ### **Float Elements**
+
+### Description
+
+The float CSS property specifies that an element should be placed along the left or right side of its container, where text and inline elements will wrap around it. This way, the element is taken from the normal flow of the web page, though still remaining a part of the flow, contrary to absolute positioning.
+
+| Class            | Style Rule                 | Description                                                                                         |
+| ---------------- | -------------------------- | --------------------------------------------------------------------------------------------------- |
+| .ion-float-left  | float: left                | The element will float on the left side of its containing block.                                    |
+| .ion-float-right | float: right               | The element will float on the right side of its containing block.                                   |
+| .ion-float-start | float: left / float: right | The same as float-left if direction is left-to-right and float-right if direction is right-to-left. |
+| .ion-float-end   | float: left / float: right | The same as float-right if direction is left-to-right and float-left if direction is right-to-left. |
+
+### Usage
+
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-float-left">
+      <div>
+        <h3>float-left</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col class="ion-float-right">
+      <div>
+        <h3>float-right</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
