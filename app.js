@@ -7,6 +7,18 @@ const totalExpensesOutput = document.querySelector("#total-expenses");
 
 let totalExpenses = 0;
 
+function presentAlert() {
+  const alert = document.createElement("ion-alert");
+  //   alert.cssClass = "my-custom-class";
+  alert.header = "Invalid Inputs";
+  //   alert.subHeader = "Subtitle";
+  alert.message = "Please enter valid reason and amount!";
+  alert.buttons = ["Okay!"];
+
+  document.body.appendChild(alert);
+  return alert.present();
+}
+
 const clear = () => {
   reasonInput.value = "";
   amountInput.value = "";
@@ -19,6 +31,16 @@ confirmBtn.addEventListener("click", () => {
   const enteredAmount = amountInput.value;
 
   if (enteredReason.trim().length <= 0 || enteredAmount <= 0 || enteredAmount.trim().length <= 0) {
+    presentAlert();
+    // alertCtrl
+    //   .create({
+    //     message: "Please enter valid reason and amount!",
+    //     header: "Invalid Inputs",
+    //     buttons: ["Okay"]
+    //   })
+    //   .then(alertElement => {
+    //     alertElement.present();
+    //   });
     return;
   }
   console.log(enteredReason, enteredAmount);
