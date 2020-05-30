@@ -1080,3 +1080,66 @@ Premium designed icons for use in web, iOS, Android, and desktop apps. Support f
   </ion-content>
 </ion-app>
 ```
+
+---
+
+## _Slots | Reference : ion-button_
+
+| Name        | Details                                                                           |
+| ----------- | --------------------------------------------------------------------------------- |
+|             | Content is placed between the named slots if provided without a slot.             |
+| "end"       | Content is placed to the right of the button text in LTR, and to the left in RTL. |
+| "icon-only" | Should be used on an icon in a button that has no text.                           |
+| "start"     | Content is placed to the left of the button text in LTR, and to the right in RTL. |
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3"><ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card>
+
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label>
+            <!-- LABEL_FOR_INPUT-FIELD -->
+          </ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-button fill="outline" color="danger">
+          <ion-icon name="NAME_OF_ICON" slot="start"></ion-icon>
+          <!-- TEXT_DISPLAYED_ON_BUTTON -->
+        </ion-button>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>
+```
+
+---
