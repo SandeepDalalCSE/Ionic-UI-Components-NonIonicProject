@@ -1773,3 +1773,28 @@ The default amount of margin to be applied is 16px and is set by the `--ion-marg
   </ion-row>
 </ion-grid>
 ```
+- ## _Border Display_
+
+The border display CSS property determines if the border should be visible or not. The property can be applied to the ion-header and the ion-footer.
+
+|Class	|Description |
+|----|----|
+|.ion-no-border	|The element will have no border.|
+
+
+### Usage
+
+```html
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Header - No Border</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Footer - No Border</ion-title>
+  </ion-toolbar>
+</ion-footer>
+```
