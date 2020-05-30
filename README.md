@@ -1280,6 +1280,7 @@ The float CSS property specifies that an element should be placed along the left
 
 ### Usage
 
+```html
 <ion-grid>
   <ion-row>
     <ion-col class="ion-float-left">
@@ -1296,3 +1297,4 @@ The float CSS property specifies that an element should be placed along the left
     </ion-col>
   </ion-row>
 </ion-grid>
+```
