@@ -905,3 +905,67 @@ Buttons provide a clickable element, which can be used in forms, or anywhere tha
   </ion-content>
 </ion-app>
 ```
+
+# Properties | ion-button
+
+- fill
+
+##### Description : This attributes determines the background and border color of the button. By default, buttons have a solid background unless the button is inside of a toolbar, in which case it has a transparent background.
+
+**_Reference_**
+| Value | Details |
+|---- | ---------
+|clear | Button with a transparent background that resembles a flat button. |
+|outline | Button with a transparent background and a visible border. |
+|solid | Button with a filled background. Useful for buttons in a toolbar. |
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3"><ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card>
+
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label>
+            <!-- LABEL_FOR_INPUT-FIELD -->
+          </ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-button fill="outline">
+          <!-- TEXT_DISPLAYED_ON_BUTTON -->
+        </ion-button>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>
+```
+
+---
