@@ -544,3 +544,54 @@ See the [Responsive Grid documentation](https://ionicframework.com/docs/layout/g
   </ion-content>
 </ion-app>
 ```
+
+## ion-row
+
+### Description
+
+Rows are horizontal components of the grid system and contain varying numbers of columns. They ensure the columns are positioned properly.
+
+See [Grid Layout](https://ionicframework.com/docs/layout/grid) for more information.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <!-- column(s) -->
+      </ion-row>
+    </ion-grid>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Add any content to this card -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
