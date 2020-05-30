@@ -595,3 +595,57 @@ See [Grid Layout](https://ionicframework.com/docs/layout/grid) for more informat
   </ion-content>
 </ion-app>
 ```
+
+## ion-col
+
+### Description
+
+Columns are cellular components of the grid system and go inside of a row. They will expand to fill their row. All content within a grid should go inside of a column.
+
+See [Grid Layout](https://ionicframework.com/docs/layout/grid) for more information.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <!-- col 1 -->
+        <ion-col><ion-col>
+        <!-- col 2 -->
+        <ion-col><ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Add any content to this card -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
