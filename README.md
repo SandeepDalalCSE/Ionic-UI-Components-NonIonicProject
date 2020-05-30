@@ -1143,3 +1143,70 @@ Premium designed icons for use in web, iOS, Android, and desktop apps. Support f
 ```
 
 ---
+---
+# CSS Utilities
+
+### Description
+
+Ionic Framework provides a set of CSS utility classes that can be used on any element in order to modify the text, element placement or adjust the padding and margin.
+
+* ##  _Text Modification_
+1. ### **Text Alignment**
+
+|Class	|Style Rule	|Description |
+|----|----|----|
+|.ion-text-left	|text-align: left	|The inline contents are aligned to the left edge of the line box. |
+.ion-text-right	|text-align: right	|The inline contents are aligned to the right edge of the line box.|
+.ion-text-start	|text-align: start	|The same as text-left if direction is left-to-right and text-right if direction is right-to-left. |
+.ion-text-end	|text-align: end	|The same as text-right if direction is left-to-right and text-left if direction is right-to-left. |
+.ion-text-center	|text-align: center	|The inline contents are centered within the line box. |
+.ion-text-justify	|text-align: justify	|The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line. |
+.ion-text-wrap	|white-space: normal	|Sequences of whitespace are collapsed. Newline characters in the source are handled as other whitespace. Breaks lines as necessary to fill line boxes. |
+.ion-text-nowrap	|white-space: nowrap	|Collapses whitespace as for normal, but suppresses line breaks (text wrapping) within text. |
+
+### Usage
+
+```html
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div class="ion-text-start">
+        <h3>text-start</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-end">
+        <h3>text-end</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-center">
+        <h3>text-center</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <div class="ion-text-justify">
+        <h3>text-justify</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-wrap">
+        <h3>text-wrap</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-nowrap">
+        <h3>text-nowrap</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
