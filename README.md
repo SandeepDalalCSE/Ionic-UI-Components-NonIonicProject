@@ -649,3 +649,57 @@ See [Grid Layout](https://ionicframework.com/docs/layout/grid) for more informat
   </ion-content>
 </ion-app>
 ```
+
+# Properties | ion-col
+
+- size
+
+##### Description : The size of the column, in terms of how many columns it should take up out of the total available. If "auto" is passed, the column will be the size of its content. `Type : string | undefined`
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <!-- col 1 with size 6 using size property-->
+        <ion-col size="6"><ion-col>
+        <!-- col 2 with size 6 using size property-->
+        <ion-col size="6"><ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Add any content to this card -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
+
+---
