@@ -450,3 +450,46 @@ Cards are a standard piece of UI that serves as an entry point to more detailed 
   </ion-content>
 </ion-app>
 ```
+
+## ion-card-content
+
+### Description
+
+`ion-card-content` is child component of `ion-card` that adds some content padding. It is recommended that any text content for a card should be placed in an `ion-card-content`.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Add any content to this card -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
