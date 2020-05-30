@@ -493,3 +493,54 @@ Cards are a standard piece of UI that serves as an entry point to more detailed 
   </ion-content>
 </ion-app>
 ```
+
+## ion-grid
+
+### Description
+
+The grid is a powerful mobile-first flexbox system for building custom layouts.
+
+It is composed of three units — a grid, row(s) and column(s). Columns will expand to fill the row, and will resize to fit additional columns. It is based on a 12 column layout with different breakpoints based on the screen size. The number of columns can be customized using CSS.
+
+See the [Responsive Grid documentation](https://ionicframework.com/docs/layout/grid) for more information.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <!-- row(s) and column(s) -->
+    </ion-grid>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <!-- Add any content to this card -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
