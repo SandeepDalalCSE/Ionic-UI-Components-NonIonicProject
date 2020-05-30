@@ -1340,3 +1340,14 @@ The display CSS property determines if an element should be visible or not. The 
   </ion-row>
 </ion-grid>
 ```
+
+**_Responsive Display Attributes | Reference : Element Display_**
+
+There are also additional classes to modify the visibility based on the screen size. Instead of just `.ion-hide` for all screen sizes, use `.ion-hide-{breakpoint}-{dir}` to only use the class on specific screen sizes, where `{breakpoint}` is one of the breakpoint names listed in Ionic Breakpoints, and `{dir}` is whether the element should be hidden on all screen sizes above (up) or below (down) the specified breakpoint.
+
+|Class	|Description |
+|----|----|
+|.ion-hide-sm-{dir}	|Applies the modifier to the element when min-width: 576px (up) or max-width: 576px (down).|
+|.ion-hide-md-{dir}	|Applies the modifier to the element when min-width: 768px (up) or max-width: 768px (down). |
+|.ion-hide-lg-{dir}	|Applies the modifier to the element when min-width: 992px (up) or max-width: 992px (down). |
+|.ion-hide-xl-{dir}	|Applies the modifier to the element when min-width: 1200px (up) or max-width: 1200px (down). |
