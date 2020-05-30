@@ -1360,7 +1360,7 @@ There are also additional classes to modify the visibility based on the screen s
 
 The padding class sets the padding area of an element. The padding area is the space between the content of the element and its border.
 
-The default amount of padding to be applied is 16px and is set by the `--ion-padding` variable. See the CSS Variables section for more information on how to change these values.
+The default amount of padding to be applied is 16px and is set by the `--ion-padding` variable. See the [CSS Variables](https://ionicframework.com/docs/theming/css-variables) section for more information on how to change these values.
 
 | Class                   | Style Rule           | Description                            |
 | ----------------------- | -------------------- | -------------------------------------- |
@@ -1418,6 +1418,76 @@ The default amount of padding to be applied is 16px and is set by the `--ion-pad
     <ion-col class="ion-no-padding">
       <div>
         no-padding
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
+
+2. ### **Element Margin**
+
+### Description
+
+The margin area extends the border area with an empty area used to separate the element from its neighbors.
+
+The default amount of margin to be applied is 16px and is set by the `--ion-margin` variable. See the [CSS Variables](https://ionicframework.com/docs/theming/css-variables) section for more information on how to change these values.
+
+|Class	|Style Rule	|Description |
+|----|----|----|
+|.ion-margin	|margin: 16px	|Applies margin to all sides. |
+|.ion-margin-top	|margin-top: 16px	|Applies margin to the top. |
+|.ion-margin-start	|margin-start: 16px	|Applies margin to the left. |
+|.ion-margin-end	|margin-end: 16px	|Applies margin to the right. |
+|.ion-margin-bottom	|margin-bottom: 16px	|Applies margin to the bottom. |
+|.ion-margin-vertical	|margin: 16px 0	|Applies margin to the top and bottom.|
+|.ion-margin-horizontal	|margin: 0 16px	|Applies margin to the left and right. |
+|.ion-no-margin	|margin: 0	|Applies no margin to all sides. |
+
+### Usage
+
+```html
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-margin">
+      <div>
+        margin
+      </div>
+    </ion-col>
+    <ion-col class="ion-margin-top">
+      <div>
+        margin-top
+      </div>
+    </ion-col>
+    <ion-col class="ion-margin-start">
+      <div>
+        margin-start
+      </div>
+    </ion-col>
+    <ion-col class="ion-margin-end">
+      <div>
+        margin-end
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-margin-bottom">
+      <div>
+        margin-bottom
+      </div>
+    </ion-col>
+    <ion-col class="ion-margin-vertical">
+      <div>
+        margin-vertical
+      </div>
+    </ion-col>
+    <ion-col class="ion-margin-horizontal">
+      <div>
+        margin-horizontal
+      </div>
+    </ion-col>
+    <ion-col class="ion-no-margin">
+      <div>
+        no-margin
       </div>
     </ion-col>
   </ion-row>
