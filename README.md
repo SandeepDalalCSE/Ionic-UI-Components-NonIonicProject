@@ -1811,21 +1811,3 @@ Ionic uses breakpoints in media queries in order to style an application differe
 |lg	|992px |
 |xl	|1200px |
 
-
-### Usage
-
-```html
-<ion-header class="ion-no-border">
-  <ion-toolbar>
-    <ion-title>Header - No Border</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-
-<ion-footer class="ion-no-border">
-  <ion-toolbar>
-    <ion-title>Footer - No Border</ion-title>
-  </ion-toolbar>
-</ion-footer>
-```
-
