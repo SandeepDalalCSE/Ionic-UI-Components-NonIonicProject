@@ -1248,3 +1248,17 @@ Ionic Framework provides a set of CSS utility classes that can be used on any el
   </ion-row>
 </ion-grid>
 ```
+
+**_Responsive Text Classes | Reference : Text Modification_**
+
+All of the text classes listed above have additional classes to modify the text based on the screen size. Instead of `text-`in each class, use `text-{breakpoint}-`to only use the class on specific screen sizes, where {breakpoint} is one of the breakpoint names listed in Ionic Breakpoints.
+
+The table below shows the default behavior, where `{modifier}` is any of the following: `left`, `right`, `start`, `end`, `center`, `justify`, `wrap`, `nowrap`, `uppercase`, `lowercase`, or `capitalize`, as they are described above.
+
+| Class                   | Description                                                 |
+| ----------------------- | ----------------------------------------------------------- |
+| .ion-text-{modifier}    | Applies the modifier to the element on all screen sizes.    |
+| .ion-text-sm-{modifier} | Applies the modifier to the element when min-width: 576px.  |
+| .ion-text-md-{modifier} | Applies the modifier to the element when min-width: 768px.  |
+| .ion-text-lg-{modifier} | Applies the modifier to the element when min-width: 992px.  |
+| .ion-text-xl-{modifier} | Applies the modifier to the element when min-width: 1200px. |
