@@ -1143,26 +1143,29 @@ Premium designed icons for use in web, iOS, Android, and desktop apps. Support f
 ```
 
 ---
+
 ---
+
 # CSS Utilities
 
 ### Description
 
 Ionic Framework provides a set of CSS utility classes that can be used on any element in order to modify the text, element placement or adjust the padding and margin.
 
-* ##  _Text Modification_
+- ## _Text Modification_
+
 1. ### **Text Alignment**
 
-|Class	|Style Rule	|Description |
-|----|----|----|
-|.ion-text-left	|text-align: left	|The inline contents are aligned to the left edge of the line box. |
-.ion-text-right	|text-align: right	|The inline contents are aligned to the right edge of the line box.|
-.ion-text-start	|text-align: start	|The same as text-left if direction is left-to-right and text-right if direction is right-to-left. |
-.ion-text-end	|text-align: end	|The same as text-right if direction is left-to-right and text-left if direction is right-to-left. |
-.ion-text-center	|text-align: center	|The inline contents are centered within the line box. |
-.ion-text-justify	|text-align: justify	|The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line. |
-.ion-text-wrap	|white-space: normal	|Sequences of whitespace are collapsed. Newline characters in the source are handled as other whitespace. Breaks lines as necessary to fill line boxes. |
-.ion-text-nowrap	|white-space: nowrap	|Collapses whitespace as for normal, but suppresses line breaks (text wrapping) within text. |
+| Class             | Style Rule          | Description                                                                                                                                                         |
+| ----------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| .ion-text-left    | text-align: left    | The inline contents are aligned to the left edge of the line box.                                                                                                   |
+| .ion-text-right   | text-align: right   | The inline contents are aligned to the right edge of the line box.                                                                                                  |
+| .ion-text-start   | text-align: start   | The same as text-left if direction is left-to-right and text-right if direction is right-to-left.                                                                   |
+| .ion-text-end     | text-align: end     | The same as text-right if direction is left-to-right and text-left if direction is right-to-left.                                                                   |
+| .ion-text-center  | text-align: center  | The inline contents are centered within the line box.                                                                                                               |
+| .ion-text-justify | text-align: justify | The inline contents are justified. Text should be spaced to line up its left and right edges to the left and right edges of the line box, except for the last line. |
+| .ion-text-wrap    | white-space: normal | Sequences of whitespace are collapsed. Newline characters in the source are handled as other whitespace. Breaks lines as necessary to fill line boxes.              |
+| .ion-text-nowrap  | white-space: nowrap | Collapses whitespace as for normal, but suppresses line breaks (text wrapping) within text.                                                                         |
 
 ### Usage
 
@@ -1205,6 +1208,41 @@ Ionic Framework provides a set of CSS utility classes that can be used on any el
       <div class="ion-text-nowrap">
         <h3>text-nowrap</h3>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
+
+2. ### **Text Transformation**
+
+| Class                | Style Rule                 | Description                                                        |
+| -------------------- | -------------------------- | ------------------------------------------------------------------ |
+| .ion-text-uppercase  | text-transform: uppercase  | Forces all characters to be converted to uppercase.                |
+| .ion-text-lowercase  | text-transform: lowercase  | Forces all characters to be converted to lowercase.                |
+| .ion-text-capitalize | text-transform: capitalize | Forces the first letter of each word to be converted to uppercase. |
+
+### Usage
+
+```html
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <div class="ion-text-uppercase">
+        <h3>text-uppercase</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-lowercase">
+        <h3>text-lowercase</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div class="ion-text-capitalize">
+        <h3>text-capitalize</h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac vehicula lorem.
       </div>
     </ion-col>
   </ion-row>
