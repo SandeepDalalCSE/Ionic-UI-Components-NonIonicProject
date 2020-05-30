@@ -969,3 +969,57 @@ Buttons provide a clickable element, which can be used in forms, or anywhere tha
 ```
 
 ---
+- color
+
+##### Description : The color to use from your application's color palette. Default options are: ` "primary", "secondary", "tertiary", "success", "warning", "danger", "light", "medium", and "dark" `. `Type : string | undefined`
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3"><ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card>
+
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label>
+            <!-- LABEL_FOR_INPUT-FIELD -->
+          </ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-button fill="outline" color="danger">
+          <!-- TEXT_DISPLAYED_ON_BUTTON -->
+        </ion-button>
+
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</ion-app>
+```
+
+---
