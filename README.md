@@ -1311,3 +1311,32 @@ The table below shows the default behavior, where `{modifier}` is any of the fol
 |.ion-float-md-{modifier}	|Applies the modifier to the element when min-width: 768px. |
 |.ion-float-lg-{modifier}	|Applies the modifier to the element when min-width: 992px. |
 |.ion-float-xl-{modifier}	|Applies the modifier to the element when min-width: 1200px. |
+
+- ## _Element Display_
+
+The display CSS property determines if an element should be visible or not. The element will still be in the DOM, but not rendered, if it is hidden.
+
+| Class	| Style Rule	| Description |
+|----|----|----|
+|.ion-hide	|display: none	|The element will be hidden. |
+
+### Usage
+
+```html
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-hide">
+      <div>
+        <h3>hidden</h3>
+        You can't see me.
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        <h3>not-hidden</h3>
+        You can see me!
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
