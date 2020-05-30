@@ -1298,3 +1298,16 @@ The float CSS property specifies that an element should be placed along the left
   </ion-row>
 </ion-grid>
 ```
+
+**_Responsive Float Classes | Reference : Element Placement_**
+All of the float classes listed above have additional classes to modify the float based on the screen size. Instead of `float- `in each class, use `float-{breakpoint}- `to only use the class on specific screen sizes, where `{breakpoint}` is one of the breakpoint names listed in Ionic Breakpoints.
+
+The table below shows the default behavior, where `{modifier}` is any of the following: `left`, `right`, `start`, or `end`, as they are described above.
+
+|Class	|Description |
+|----|----|
+|.ion-float-{modifier}	|Applies the modifier to the element on all screen sizes. |
+|.ion-float-sm-{modifier}	|Applies the modifier to the element when min-width: 576px. |
+|.ion-float-md-{modifier}	|Applies the modifier to the element when min-width: 768px. |
+|.ion-float-lg-{modifier}	|Applies the modifier to the element when min-width: 992px. |
+|.ion-float-xl-{modifier}	|Applies the modifier to the element when min-width: 1200px. |
