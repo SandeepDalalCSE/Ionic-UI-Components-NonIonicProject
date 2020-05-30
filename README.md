@@ -1730,3 +1730,46 @@ The default amount of margin to be applied is 16px and is set by the `--ion-marg
   </ion-row>
 </ion-grid>
 ```
+
+2. ### **Flex Item Properties**
+
+|Class	|Style Rule	|Description|
+|----|----|----|
+|.ion-align-self-start	|align-self: flex-start	|Item is packed toward the start on the cross axis. |
+|.ion-align-self-end	|align-self: flex-end	|Item is packed toward the end on the cross axis. |
+|.ion-align-self-center	|align-self: center	|Item is centered along the cross axis. |
+|.ion-align-self-baseline	|align-self: baseline	|Item is aligned so that its baseline aligns with other item baselines. |
+|.ion-align-self-stretch	|align-self: stretch	|Item is stretched to fill the container. |
+|.ion-align-self-auto	|align-self: auto	|Item is positioned according to the parent's align-items value. |
+
+### Usage
+
+```html
+<ion-grid>
+  <ion-row>
+    <ion-col class="ion-align-self-start">
+      <div>
+        1 of 4
+      </div>
+    </ion-col>
+    <ion-col class="ion-align-self-center">
+      <div>
+        2 of 4
+      </div>
+    </ion-col>
+    <ion-col class="ion-align-self-end">
+      <div>
+        3 of 4
+      </div>
+    </ion-col>
+    <ion-col>
+      <div>
+        4 of 4 <br>
+        # <br>
+        # <br>
+        #
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+```
