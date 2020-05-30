@@ -409,3 +409,44 @@ Cards are a standard piece of UI that serves as an entry point to more detailed 
   </ion-content>
 </ion-app>
 ```
+
+## ion-card-subtitle
+
+### Description
+
+`ion-card-subtitle` is a child component of `ion-card`.
+
+### Usage
+
+```html
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        <!-- TITLE_OF_TOOLBAR -->
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>
+          <!-- TITLE_OF_ION-CARD -->
+        </ion-card-title>
+        <ion-card-subtitle>
+          <!-- SUBTITLE_OF_ION-CARD -->
+        </ion-card-subtitle>
+      </ion-card-header>
+      <!--  card content -->
+    </ion-card>
+
+    <ion-item>
+      <ion-label>
+        <!-- LABEL_FOR_INPUT-FIELD -->
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </ion-content>
+</ion-app>
+```
